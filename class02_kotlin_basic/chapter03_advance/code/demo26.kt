@@ -313,17 +313,17 @@ fun demonstrateArraySort() {
     println("  结果: $descending（降序排列）")
     println()
 
-    // 方法3: 使用 sortedBy 按照自定义规则排序
-    println("方法3 - 使用 sortedBy 按照自定义规则排序:")
-    println("  代码: numbers.toList().sortedBy { it % 10 }（按个位数排序）")
-    val sortByMod = numbers.toList().sortedBy { it % 10 }
+    // 方法3: 使用 sortBy 按照自定义规则排序
+    println("方法3 - 使用 sortBy 按照自定义规则排序:")
+    println("  代码: numbers.toList().sortBy { it % 10 }（按个位数排序）")
+    val sortByMod = numbers.toList().sortBy { it % 10 }
     println("  结果: $sortByMod")
     println()
 
     // 方法4: 使用 sortByDescending 按照自定义规则降序排序
     println("方法4 - 使用 sortByDescending 按照自定义规则降序排序:")
-    println("  代码: numbers.toList().sortedByDescending { it / 10 }（按十位数降序）")
-    val sortByDescMod = numbers.toList().sortedByDescending { it / 10 }
+    println("  代码: numbers.toList().sortByDescending { it / 10 }（按十位数降序）")
+    val sortByDescMod = numbers.toList().sortByDescending { it / 10 }
     println("  结果: $sortByDescMod")
     println()
 
@@ -594,8 +594,8 @@ fun demonstrateStringArrayOperations() {
 
     // 方法3: 按长度排序
     println("方法3 - 按长度排序:")
-    println("  代码: words.sortedBy { it.length }")
-    val sortedByLength = words.sortedBy { it.length }
+    println("  代码: words.sortBy { it.length }")
+    val sortedByLength = words.sortBy { it.length }
     println("  结果: $sortedByLength")
     println()
 
